@@ -2,12 +2,6 @@ module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        small: "430px",
-      },
-      backgroundImage: {
-        abc: "url('./assets/images/abc/background.webp')",
-      },
       fontFamily: {
         proxima: ["proxima", "sans-serif"],
         lulo: ["lulo", "sans-serif"],

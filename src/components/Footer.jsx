@@ -5,8 +5,9 @@ import microsoft from "../assets/images/footer/microsoft.png";
 import aws from "../assets/images/footer/aws.png";
 const Footer = () => {
   return (
-    <div>
-      <div className="max-w-[1140px] mx-auto xl:px-0 px-3">
+    <div className=" relative overflow-x-hidden">
+      <div className=" bg-greenish w-[220px] h-[220px] rounded-full blur-3xl pointer-events-none lg:block hidden end-[-8%] top-[15%] absolute"></div>
+      <div className="max-w-[1140px] mx-auto xl:px-0 px-3 relative z-10">
         <div className=" flex flex-wrap justify-between gap-y-5 mb-[60px]">
           <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2">
             {" "}
