@@ -10,7 +10,7 @@ const OneClick = () => {
       <div className=" flex flex-wrap gap-y-6 mb-[44px]">
         {oneClickSponser.map((content, index) => {
           return (
-            <div className=" lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 px-3">
+            <div className=" lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 px-3" key={index}>
               <div className="border-lightGreenish border shadow-[0px_0px_30px_0px_#0BB89D4D] bg-lightBlack rounded-full hover:shadow-[0px_0px_18.5px_0px_#0BB89D4D] hover:bg-burnhamDark hover:border-greenish transition-all ease-in-out duration-300 group h-full flex items-center  py-[22px] px-[18px] gap-3 justify-center">
                 <img
                   src={content.img}

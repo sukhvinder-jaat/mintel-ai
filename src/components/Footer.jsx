@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import linkedIn from "../assets/images/footer/linked-in.png";
 import goggle from "../assets/images/footer/goggle.png";
 import microsoft from "../assets/images/footer/microsoft.png";
 import aws from "../assets/images/footer/aws.png";
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+    setIsValid(true); // Reset validation status on input change
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Regex pattern for email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email || !emailRegex.test(email)) {
+      setIsValid(false);
+      return;
+    }
+
+    setIsValid(true);
+    setEmail("");
+  };
   return (
     <div className=" relative overflow-x-hidden">
       <div className=" bg-greenish w-[220px] h-[220px] rounded-full blur-3xl pointer-events-none lg:block hidden end-[-8%] top-[15%] absolute"></div>
@@ -17,24 +39,33 @@ const Footer = () => {
             <p className=" md:text-2xl text-xl text-white font-proxima font-semibold mb-4">
               Join the waiting list
             </p>
-            <div className=" border border-[#3D3D3D] rounded flex max-w-[447px]">
+            <form
+              onSubmit={handleSubmit}
+              className="w-full border border-[#3D3D3D] rounded flex max-w-[447px]"
+            >
               <input
                 type="email"
-                required
-                className=" bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base text-[#B2B2B2] p-4"
+                value={email}
+                onChange={handleChange}
+                className={`bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base focus-visible:outline-none text-[#B2B2B2] p-4 ${
+                  !isValid && "placeholder:text-red-500 text-red-500"
+                }`}
                 placeholder="Enter your business email"
               />
-              <button className=" bg-greenish py-4 px-[29px] rounded text-base text-nowrap text-white border border-greenish hover:bg-transparent hover:text-greenish transition-all ease-in-out duration-300">
+              <button
+                type="submit"
+                className="bg-greenish py-4 px-[29px] rounded text-base text-nowrap text-white border border-greenish hover:bg-transparent hover:text-greenish transition-all ease-in-out duration-300"
+              >
                 Sign Up
               </button>
-            </div>
+            </form>
           </div>
           <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2">
             <p className=" md:text-2xl text-xl text-white font-proxima font-semibold mb-4">
               Follow Us
             </p>
 
-            <a href="www.linkedIn.com" target="blank">
+            <a href="https://www.linkedin.com/" target="blank">
               <img
                 src={linkedIn}
                 alt="linkedIn"
