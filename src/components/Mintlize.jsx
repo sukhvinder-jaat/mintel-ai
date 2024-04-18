@@ -28,7 +28,7 @@ const Mintlize = () => {
                 Save Time on Prospecting
               </p>
               {/* Information about time saved */}
-              <div className=" border border-[#525252] rounded-xl px-[32px] py-3 flex items-center justify-center gap-5">
+              <div className=" border border-vampire rounded-xl px-[32px] py-3 flex items-center justify-center gap-5">
                 <Clock />
                 <p className=" text-3xl text-white font-semibold">100</p>
               </div>
@@ -51,7 +51,7 @@ const Mintlize = () => {
                     {content.heading}
                   </p>
                   {/* Card description */}
-                  <p className="text-[#C3C3C3] font-proxima font-normal lg:text-2xl text-xl text-center">
+                  <p className="text-nickel font-proxima font-normal lg:text-2xl text-xl text-center">
                     {content.para}
                     <span className=" text-white">{content.whitePara}</span>
                   </p>

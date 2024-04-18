@@ -48,13 +48,13 @@ const Footer = () => {
             {/* Email signup form */}
             <form
               onSubmit={handleSubmit}
-              className="w-full border border-[#3D3D3D] rounded flex max-w-[447px]"
+              className="w-full border border-iridium rounded flex max-w-[447px]"
             >
               <input
                 type="email"
                 value={email}
                 onChange={handleChange}
-                className={`bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base focus-visible:outline-none text-[#B2B2B2] p-4 ${
+                className={`bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base focus-visible:outline-none text-noble p-4 ${
                   !isValid && "placeholder:text-red-500 text-red-500"
                 }`}
                 placeholder="Enter your business email"
@@ -108,9 +108,9 @@ const Footer = () => {
         </div>
       </div>
       {/* Horizontal line */}
-      <div className=" h-[1px] w-full bg-[#3D3D3D]"></div>
+      <div className=" h-[1px] w-full bg-iridium"></div>
       {/* Footer text */}
-      <p className=" py-4 text-[#B2B2B2] font-proxima font-normal md:text-lg text-base text-center">
+      <p className=" py-4 text-noble font-proxima font-normal md:text-lg text-base text-center">
         © All Rights Reserved {new Date().getFullYear()} | Mintel AI
       </p>
     </div>

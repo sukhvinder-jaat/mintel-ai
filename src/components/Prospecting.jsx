@@ -6,7 +6,7 @@ const Prospecting = () => {
   return (
     <div className="md:px-[50px] px-7 md:mb-[146px] mb-20">
       {/* Main container */}
-      <div className="max-w-[1340px] mx-auto rounded-[32px] p-1 bg-gradient-to-tr from-[#15AEA6] to-[#7D4EFF] overflow-hidden shadow-[0px_0px_57px_0px_#0BB89D]">
+      <div className="max-w-[1340px] mx-auto rounded-[32px] p-1 bg-gradient-to-tr from-greenBlue to-bluePurple overflow-hidden shadow-[0px_0px_57px_0px_#0BB89D]">
         {/* Content container */}
         <div className=" bg-white rounded-[32px] py-20 xl:px-[100px] sm:px-10 px-5">
           {/* Main title */}

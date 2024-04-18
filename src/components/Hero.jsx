@@ -41,7 +41,7 @@ const Hero = () => {
           </button>
 
           {/* GIF illustration */}
-          <div className=" overflow-hidden h-[600px] relative pointer-events-none bg-[#00FFD7]">
+          <div className=" overflow-hidden h-[600px] relative pointer-events-none bg-articlick">
             <img
               src={gif}
               alt="gif"
