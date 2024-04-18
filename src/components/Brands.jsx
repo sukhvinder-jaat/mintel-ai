@@ -1,6 +1,6 @@
 import React from "react";
-import brand from "../assets/images/brand/brand-w.png";
 import { brandCard } from "./common/Helper";
+
 const Brands = () => {
   return (
     <div className="md:px-[50px] px-7 mb-[100px]">
@@ -10,6 +10,7 @@ const Brands = () => {
             Brands That Trust Us
           </p>
           <div className="flex flex-wrap gap-y-6">
+            {/* Mapping through brandCard array to render brand cards */}
             {brandCard.map((content, index) => {
               return (
                 <div className=" md:w-4/12 sm:w-6/12 w-full px-3" key={index}>
