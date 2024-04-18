@@ -20,10 +20,18 @@ const Prospecting = () => {
           {/* Auto cards */}
           <div className=" flex flex-wrap gap-y-10 justify-between relative">
             {/* Arrows */}
-            <span className=" absolute lg:top-[20%] top-[15%] lg:start-[30%] start-[50%] lg:block hidden">
+            <span
+              className=" absolute lg:top-[20%] top-[15%] lg:start-[30%] start-[50%] lg:block hidden"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <AutoArrow />
             </span>
-            <span className=" absolute top-[20%] end-[30%] lg:block hidden">
+            <span
+              className=" absolute top-[20%] end-[30%] lg:block hidden"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <AutoArrow />
             </span>
             {/* Mapping through autoCard array to render auto cards */}
@@ -31,6 +39,8 @@ const Prospecting = () => {
               return (
                 <div
                   className=" lg:w-4/12 md:w-6/12 w-full flex flex-col items-center text-center lg:max-w-[293px] xl:px-0 px-3"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
                   key={index}
                 >
                   {/* Icon */}

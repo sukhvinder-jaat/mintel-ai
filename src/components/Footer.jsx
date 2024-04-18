@@ -38,8 +38,8 @@ const Footer = () => {
       <div className="max-w-[1140px] mx-auto xl:px-0 px-3 relative z-10">
         <div className=" flex flex-wrap justify-between gap-y-5 mb-[60px]">
           {/* Stay in the Know section */}
-          <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2">
-            <p className=" font-lulo font-bold lg:text-4xl md:text-3xl max-w-[320px] text-2xl text-white leading-[130%] mb-[32px]">
+          <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2 md:text-start text-center">
+            <p className=" font-lulo font-bold lg:text-4xl md:text-3xl max-w-[320px] text-2xl text-white leading-[130%] mb-[32px]  md:mx-0 mx-auto">
               Stay in the Know
             </p>
             <p className=" md:text-2xl text-xl text-white font-proxima font-semibold mb-4">
@@ -48,16 +48,16 @@ const Footer = () => {
             {/* Email signup form */}
             <form
               onSubmit={handleSubmit}
-              className="w-full border border-iridium rounded flex max-w-[447px]"
+              className="w-full border border-iridium rounded flex max-w-[447px] md:mx-0 mx-auto"
             >
               <input
                 type="email"
                 value={email}
                 onChange={handleChange}
-                className={`bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base focus-visible:outline-none text-noble p-4 ${
-                  !isValid && "placeholder:text-red-500 text-red-500"
-                }`}
-                placeholder="Enter your business email"
+                className={`bg-transparent w-full placeholder:font-proxima placeholder:font-normal placeholder:text-base focus-visible:outline-none text-noble p-4 `}
+                placeholder={
+                  !isValid ? "Enter a valid Email" : "Enter your business email"
+                }
               />
               <button
                 type="submit"
@@ -68,12 +68,12 @@ const Footer = () => {
             </form>
           </div>
           {/* Follow Us and Backed by section */}
-          <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2">
+          <div className="xl:w-5/12 lg:w-6/12 w-full xl:px-0 lg:px-2 md:text-start text-center">
             <p className=" md:text-2xl text-xl text-white font-proxima font-semibold mb-4">
               Follow Us
             </p>
             {/* Social media icons */}
-            <div className=" flex items-start justify-start">
+            <div className=" flex lg:items-start justify-center md:justify-start">
               {" "}
               <a href="https://www.linkedin.com/" target="blank">
                 <img
@@ -87,7 +87,7 @@ const Footer = () => {
               Backed by
             </p>
             {/* Logos of supported companies */}
-            <div className=" flex gap-4 sm:flex-row flex-col">
+            <div className=" flex gap-4 sm:flex-nowrap flex-wrap md:justify-start justify-center">
               <img
                 src={goggle}
                 alt="goggle"

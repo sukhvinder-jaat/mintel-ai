@@ -10,27 +10,58 @@ const Compatable = () => {
         <p className=" font-lulo font-bold lg:text-4xl md:text-3xl text-2xl text-white text-center mx-auto leading-[110%] md:mb-[60px] mb-10">
           COMPATIBLE WITH
         </p>
-        <div className=" flex flex-wrap items-center">
+        <div className=" flex flex-wrap gap-y-4 items-center justify-center">
           {/* First compatibility */}
-          <div className="lg:w-4/12 sm:w-6/12 w-full flex items-center gap-1">
-            <LinkedIn />
-            <p className=" font-proxima font-bold text-3xl text-white">
-              Recruiter
-            </p>
+          <div
+            className="md:w-4/12 w-6/12 flex lg:justify-start justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <a
+              href="https://www.linkedin.com/"
+              target="blank"
+              className="flex items-center  gap-1"
+            >
+              <LinkedIn />
+              <p className=" font-proxima font-bold md:text-3xl text-2xl text-white">
+                Recruiter
+              </p>
+            </a>
           </div>
           {/* Second compatibility */}
-          <div className=" lg:w-4/12 sm:w-6/12 w-full flex items-center gap-1">
-            <p className=" font-proxima font-bold text-3xl text-white">
-              Linked
-            </p>
-            <LinkedIn />
+          <div
+            className="md:w-4/12 w-6/12 flex lg:justify-start justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            {" "}
+            <a
+              href="https://www.linkedin.com/"
+              target="blank"
+              className="flex items-center  gap-1"
+            >
+              <p className=" font-proxima font-bold md:text-3xl text-2xl text-white">
+                Linked
+              </p>
+              <LinkedIn />
+            </a>
           </div>{" "}
           {/* Third compatibility */}
-          <div className=" lg:w-4/12 sm:w-6/12 w-full flex items-center gap-1">
-            <LinkedIn />
-            <p className=" font-proxima font-bold text-3xl text-white text-nowrap">
-              Sales Navigator
-            </p>
+          <div
+            className="md:w-4/12 w-6/12 flex lg:justify-start justify-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <a
+              href="https://www.linkedin.com/"
+              target="blank"
+              className="flex items-center  gap-1"
+            >
+              <LinkedIn />
+              <p className=" font-proxima font-bold md:text-3xl text-2xl text-white text-nowrap">
+                Sales Navigator
+              </p>
+            </a>
           </div>
         </div>
       </div>

@@ -7,8 +7,11 @@ import Mintlize from "./components/Mintlize";
 import OneClick from "./components/OneClick";
 import Brands from "./components/Brands";
 import Footer from "./components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({ once: true });
   return (
     <div className=" bg-black">
       <Hero />

@@ -18,7 +18,11 @@ const Mintlize = () => {
         {/* Mintlize cards */}
         <div className=" flex flex-wrap gap-y-6">
           {/* First card: Save Time on Prospecting */}
-          <div className=" px-3 lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+          <div
+            className=" px-3 lg:w-3/12 md:w-4/12 sm:w-6/12 w-full"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className=" py-8 px-5 border-lightGreenish border shadow-[0px_0px_23px_0px_#0BB89D1F] bg-lightBlack rounded-md hover:shadow-[0px_0px_18.5px_0px_#0BB89D4D] hover:bg-burnhamDark hover:border-greenish transition-all ease-in-out duration-300 group h-full flex flex-col items-center relative">
               <span className=" mb-6">
                 {" "}
@@ -42,6 +46,8 @@ const Mintlize = () => {
             return (
               <div
                 className=" px-3 lg:w-3/12 md:w-4/12 sm:w-6/12 w-full"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 key={index}
               >
                 <div className=" py-8 px-4 border-lightGreenish border shadow-[0px_0px_23px_0px_#0BB89D1F] bg-lightBlack rounded-md hover:shadow-[0px_0px_18.5px_0px_#0BB89D4D] hover:bg-burnhamDark hover:border-greenish  transition-all ease-in-out duration-300 group h-full flex flex-col items-center relative">

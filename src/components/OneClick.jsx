@@ -16,6 +16,8 @@ const OneClick = () => {
           return (
             <div
               className=" lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 px-3"
+              data-aos="fade-right"
+              data-aos-duration="1000"
               key={index}
             >
               {/* Individual sponsor logo */}

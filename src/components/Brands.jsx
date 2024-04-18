@@ -13,7 +13,12 @@ const Brands = () => {
             {/* Mapping through brandCard array to render brand cards */}
             {brandCard.map((content, index) => {
               return (
-                <div className=" md:w-4/12 sm:w-6/12 w-full px-3" key={index}>
+                <div
+                  className=" md:w-4/12 sm:w-6/12 w-full px-3"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  key={index}
+                >
                   <div className=" border border-pastalGray hover:shadow-xl transition-all ease-in-out duration-300 py-[50px] rounded-md flex items-center justify-center h-full">
                     <img
                       src={content.img}
